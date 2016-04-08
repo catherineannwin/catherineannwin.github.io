@@ -1,0 +1,60 @@
+/* GENERAL LOOK AND FEEL OF PAGE */
+#container {
+	margin: 0 auto;
+	width:960px;
+	border-radius: 2px 2px 0 0;
+	border-style: solid;
+    border-width: 5px;
+	border-color: #008080
+	}
+	
+header {
+	text-align:center;
+	font-family: 'Open Sans Condensed', sans-serif;
+	font-size: 12px;
+	font-weight: 200;
+	padding: 10px;
+	background: #008080;
+	color: white;
+	margin: 0;
+	}
+	
+p {
+	text-align:left;
+	font-family: 'Open Sans Condensed', sans-serif;
+	font-size: 14px;
+	font-weight: 200;
+	padding: 10px;
+	background: #008080;
+	color: white;
+	margin: 0;
+	}
+
+/*GENERAL LOOK AND FEEL OF GOOGLEMAP */
+#googleMap {
+	width:960px; /* width is required for your map to display */
+	height:500px; /* height is required for your map to display */
+	}
+
+/* INFOWINDOW STYLES */
+.iw-content {
+	width:350px;
+	padding:0;
+	overflow:auto;
+	}
+
+.iw-title {
+	font-family: 'Open Sans Condensed', sans-serif;
+	font-size: 18px;
+	font-weight: 400;
+	padding: 10px;
+	background: #008080;
+	color: white;
+	margin: 0;
+	border-radius: 2px 2px 0 0;
+	}
+	
+.iw-text {
+	padding-top:5px;
+	padding-bottom:10px;
+	}

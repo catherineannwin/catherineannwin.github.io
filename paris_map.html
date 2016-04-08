@@ -1,0 +1,819 @@
+ <!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="description" content="Mapping Diversity in Paris">
+<meta name="author" content="Catherine Winters">
+<meta name="keywords" content="diversity, paris, film, mapping">
+<script src="http://maps.googleapis.com/maps/api/js"></script>
+<link rel="stylesheet" type="text/css" href="winters_thick_map_style.css">
+<title>Mapping Diversity in Paris</title>
+<script>
+
+
+function initialize() {
+  var mapProp = {
+    center:new google.maps.LatLng(48.8567, 2.3508),
+    zoom:12,
+    mapTypeId:google.maps.MapTypeId.ROADMAP
+  };
+  var map=new google.maps.Map(document.getElementById("googleMap"),mapProp);
+
+var circ1= new google.maps.Circle({
+      strokeColor: '#FFC20E',
+      strokeOpacity: 0.8,
+      strokeWeight: 2,
+      fillColor: '#FFC20E',
+      fillOpacity: 0.35,
+      map: map,
+      center: {lat: 48.892037, lng: 2.356419},
+      radius: 1000,
+    });
+	
+var circ2= new google.maps.Circle({
+      strokeColor: '#FF0000',
+      strokeOpacity: 0.8,
+      strokeWeight: 2,
+      fillColor: '#FF0000',
+      fillOpacity: 0.35,
+      map: map,
+      center: {lat: 48.870417, lng: 2.385776},
+      radius: 400,
+    });
+
+var circ3= new google.maps.Circle({
+      strokeColor: '#FF0000',
+      strokeOpacity: 0.8,
+      strokeWeight: 2,
+      fillColor: '#FF0000',
+      fillOpacity: 0.35,
+      map: map,
+      center: {lat: 48.822739, lng: 2.364607},
+      radius: 450,
+    });
+	
+var circ4= new google.maps.Circle({
+      strokeColor: '#FF0000',
+      strokeOpacity: 0.8,
+      strokeWeight: 2,
+      fillColor: '#FF0000',
+      fillOpacity: 0.35,
+      map: map,
+      center: {lat: 48.866780, lng: 2.333869},
+      radius: 250,
+    });
+	
+var circ5= new google.maps.Circle({
+      strokeColor: '#FF0000',
+      strokeOpacity: 0.8,
+      strokeWeight: 2,
+      fillColor: '#FF0000',
+      fillOpacity: 0.35,
+      map: map,
+      center: {lat: 48.867124, lng: 2.383318},
+      radius: 250,
+    });
+
+var pos1 = new google.maps.LatLng(48.8873484, 2.3372275);
+var marker1=new google.maps.Marker({
+  position:pos1,
+  title: "Marker 1",
+  });
+  
+ var infowindow1 = new google.maps.InfoWindow({
+	content: "Montmartre - Paris Je T'Aime"
+	});
+
+marker1.setMap(map);
+
+marker1.addListener('click',function() {
+ 	infowindow1.open(map, marker1);
+ 	})
+
+
+
+var pos2 = new google.maps.LatLng(48.8507794, 2.3531474);
+var marker2 = new google.maps.Marker({
+	position: pos2,
+	title: "Marker 2",
+	});
+	
+var infowindow2 = new google.maps.InfoWindow({
+	content: "Quais de Seine - Paris Je T'Aime"
+	});
+	
+marker2.setMap(map);
+
+marker2.addListener('click',function() {
+ 	infowindow2.open(map, marker2);
+ 	});
+
+var pos4 = new google.maps.LatLng(48.864655, 2.329278);
+var marker4=new google.maps.Marker({
+  position:pos4,
+  title: "Marker 4",
+  });
+  
+ var infowindow4 = new google.maps.InfoWindow({
+	content: "Tuileries - Paris Je T'Aime"
+	});
+
+marker4.setMap(map);
+
+marker4.addListener('click',function() {
+ 	infowindow4.open(map, marker4);
+ 	});
+
+var pos5 = new google.maps.LatLng(48.819687, 2.364264);
+var marker5=new google.maps.Marker({
+  position:pos5,
+  title: "Marker 5",
+  });
+  
+ var infowindow5 = new google.maps.InfoWindow({
+	content: "Porte de Choisy - Paris Je T'Aime"
+	});
+
+marker5.setMap(map);
+
+marker5.addListener('click',function() {
+ 	infowindow5.open(map, marker5);
+ 	});
+
+var pos6 = new google.maps.LatLng(48.850143, 2.376485);
+var marker6=new google.maps.Marker({
+  position:pos6,
+  title: "Marker 6",
+  });
+  
+ var infowindow6 = new google.maps.InfoWindow({
+	content: "Bastille - Paris Je T'Aime"
+	});
+
+marker6.setMap(map);
+
+marker6.addListener('click',function() {
+ 	infowindow6.open(map, marker6);
+ 	});
+
+var pos7 = new google.maps.LatLng(48.865412, 2.341063);
+var marker7=new google.maps.Marker({
+  position:pos7,
+  title: "Marker 7",
+  });
+  
+ var infowindow7 = new google.maps.InfoWindow({
+	content: "Place des Victoires - Paris Je T'Aime"
+	});
+
+marker7.setMap(map);
+
+marker7.addListener('click',function() {
+ 	infowindow7.open(map, marker7);
+ 	});
+
+var pos8 = new google.maps.LatLng(48.857769, 2.295090);
+var marker8=new google.maps.Marker({
+  position:pos8,
+  title: "Marker 8",
+  });
+  
+ var infowindow8 = new google.maps.InfoWindow({
+	content: "Tour Eiffel - Paris Je T'Aime"
+	});
+
+marker8.setMap(map);
+
+marker8.addListener('click',function() {
+ 	infowindow8.open(map, marker8);
+ 	});
+
+var pos9 = new google.maps.LatLng(48.880283, 2.308567);
+var marker9=new google.maps.Marker({
+  position:pos9,
+  title: "Marker 9 - Paris Je T'Aime",
+  });
+  
+ var infowindow9 = new google.maps.InfoWindow({
+	content: "Parc Monceau"
+	});
+
+marker9.setMap(map);
+
+marker9.addListener('click',function() {
+ 	infowindow9.open(map, marker9);
+ 	});
+
+
+var pos10 = new google.maps.LatLng(48.863059, 2.361835);
+var marker10=new google.maps.Marker({
+  position:pos10,
+  title: "Marker 10",
+  });
+  
+ var infowindow10 = new google.maps.InfoWindow({
+	content: "Quartier des Enfants Rouges - Paris Je T'Aime"
+	});
+
+marker10.setMap(map);
+
+marker10.addListener('click',function() {
+ 	infowindow10.open(map, marker10);
+ 	});
+
+var pos11 = new google.maps.LatLng(48.876383, 2.394073);
+var marker11=new google.maps.Marker({
+  position:pos11,
+  title: "Marker 11",
+  });
+  
+ var infowindow11 = new google.maps.InfoWindow({
+	content: "Place des Fetes - Paris Je T'Aime"
+	});
+
+marker11.setMap(map);
+
+marker11.addListener('click',function() {
+ 	infowindow11.open(map, marker11);
+ 	});
+
+var pos12 = new google.maps.LatLng(48.882480, 2.340168);
+var marker12=new google.maps.Marker({
+  position:pos12,
+  title: "Marker 12",
+  });
+  
+ var infowindow12 = new google.maps.InfoWindow({
+	content: "Pigalle - Paris Je T'Aime"
+	});
+
+marker12.setMap(map);
+
+marker12.addListener('click',function() {
+ 	infowindow12.open(map, marker12);
+ 	});
+
+var pos13 = new google.maps.LatLng(48.860024, 2.390866);
+var marker13=new google.maps.Marker({
+  position:pos13,
+  title: "Marker 13",
+  });
+  
+ var infowindow13 = new google.maps.InfoWindow({
+	content: "Pere Lachaise - Paris Je T'Aime"
+	});
+
+marker13.setMap(map);
+
+marker13.addListener('click',function() {
+ 	infowindow13.open(map, marker13);
+ 	});
+
+var pos14 = new google.maps.LatLng(48.883872, 2.367909);
+var marker14=new google.maps.Marker({
+  position:pos14,
+  title: "Marker 14",
+  });
+  
+ var infowindow14 = new google.maps.InfoWindow({
+	content: "Faubourg St. Denis - Paris Je T'Aime"
+	});
+
+marker14.setMap(map);
+
+marker14.addListener('click',function() {
+ 	infowindow14.open(map, marker14);
+ 	});
+
+var pos15 = new google.maps.LatLng(48.847742, 2.340309);
+var marker15=new google.maps.Marker({
+  position:pos15,
+  title: "Marker 15",
+  });
+  
+ var infowindow15 = new google.maps.InfoWindow({
+	content: "Quartier Latin - Paris Je T'Aime"
+	});
+
+marker15.setMap(map);
+
+marker15.addListener('click',function() {
+ 	infowindow15.open(map, marker15);
+ 	});
+
+var pos16 = new google.maps.LatLng(48.841367, 2.320332);
+var marker16=new google.maps.Marker({
+  position:pos16,
+  title: "Marker 16",
+  });
+  
+ var infowindow16 = new google.maps.InfoWindow({
+	content: "14e - Paris Je T'Aime"
+	});
+
+marker16.setMap(map);
+
+marker16.addListener('click',function() {
+ 	infowindow16.open(map, marker16);
+ 	});
+
+var pos17 = new google.maps.LatLng(48.870229, 2.3372275);
+var marker17=new google.maps.Marker({
+  position:pos17,
+  title: "Marker 17",
+  });
+  
+ var infowindow17 = new google.maps.InfoWindow({
+	content: "Madeleine - Paris Je T'Aime"
+	});
+
+marker17.setMap(map);
+
+marker17.addListener('click',function() {
+ 	infowindow17.open(map, marker17);
+ 	});
+	
+var pos20 = new google.maps.LatLng(48.8525, 2.346944);
+var marker20=new google.maps.Marker({
+  position:pos20,
+  title: "Marker 20",
+  });
+  
+ var infowindow20 = new google.maps.InfoWindow({
+	content: "Before Sunset"
+	});
+
+marker20.setMap(map);
+
+marker20.addListener('click',function() {
+ 	infowindow20.open(map, marker20);
+ 	});
+	
+var pos21 = new google.maps.LatLng(48.884931, 2.333611);
+var marker21=new google.maps.Marker({
+  position:pos21,
+  title: "Marker 21",
+  });
+  
+ var infowindow21 = new google.maps.InfoWindow({
+	content: "Amelie"
+	});
+
+marker21.setMap(map);
+
+marker21.addListener('click',function() {
+ 	infowindow21.open(map, marker21);
+ 	});
+var custom = '<div class="iw-content">' +
+						'<div class="iw-title">Mapping Absence</div>' +
+							'<div class="iw-text"><p>Loin de 16e  looks to represent a woman who lives on the outskirts of Paris. She is frequently read as an immigrant and lives in an unremarkable apartment. The only part of her vignette that I could definitively map is when her commute takes her through the vast underground walkways of Les Halles/Chatelet. As one of the few representations of a character of color, this point marks how her life is allowed to be "unmapped" in Paris Je T Aime. </p> <iframe width="420" height="315" src="https://www.youtube.com/embed/4LjhfZB8XJE" frameborder="0" allowfullscreen></iframe></div>' +
+							'</div>';
+							
+var pos18 = new google.maps.LatLng(48.8631800, 2.3476100);
+var marker18=new google.maps.Marker({
+  position:pos18,
+  title: "Marker 18",
+  });
+  
+ var infowindow18 = new google.maps.InfoWindow({
+	content: custom,
+	});
+
+marker18.setMap(map);
+
+marker18.addListener('click',function() {
+ 	infowindow18.open(map, marker18);
+ 	});
+
+
+var pos3 = new google.maps.LatLng(48.8570772, 2.3568022
+);		
+						
+var marker3 = new google.maps.Marker({
+	position:pos3,
+	title: "Marker 3"
+	}); 
+	
+var infowindow3 = new google.maps.InfoWindow({
+	content: "Le Marais - Paris Je T'Aime <br>" + "While this vignette does not represent racial diversity, it does show a potential gay couple. It is worth noting that it is located in the Gay district of Paris, which was formally the Jewish quarter.",
+	});
+	
+marker3.setMap(map);
+	
+//infowindow3.open(map, marker3);
+
+marker3.addListener('click',function() {
+ 	infowindow3.open(map, marker3);
+ 	});
+ 	
+	
+var pos19 = new google.maps.LatLng(48.877995, 2.367302);
+var marker19=new google.maps.Marker({
+  position:pos19,
+  icon: {
+	path: google.maps.SymbolPath.CIRCLE,
+    scale: 5,
+	fillColor: 'green'},
+  title: "Marker 19",
+  });
+  
+ var infowindow19 = new google.maps.InfoWindow({
+	content: "College de la Grange Aux Belles <br>" + "REP"
+	});
+
+marker19.setMap(map);
+
+marker19.addListener('click',function() {
+ infowindow19.open(map, marker19);
+ 	});
+
+var pos37 = new google.maps.LatLng(48.868119, 2.374473);
+var marker37=new google.maps.Marker({
+  position:pos37,
+  icon: {
+	path: google.maps.SymbolPath.CIRCLE,
+    scale: 5,
+	},
+  title: "Marker 37",
+  });
+  
+ var infowindow37 = new google.maps.InfoWindow({
+	content: "College Lucie et Raymond Aubrac <br>" + "REP"
+	});
+
+marker37.setMap(map);
+
+marker37.addListener('click',function() {
+ infowindow37.open(map, marker37);
+ 	});
+	
+var pos21 = new google.maps.LatLng(48.820801, 2.364780);
+var marker21=new google.maps.Marker({
+  position:pos21,
+  icon: {
+	path: google.maps.SymbolPath.CIRCLE,
+    scale: 5,
+	},
+  title: "Marker 21",
+  });
+  
+ var infowindow21 = new google.maps.InfoWindow({
+	content: "College Camille Claude <br>" + "REP"
+	});
+
+marker21.setMap(map);
+
+marker21.addListener('click',function() {
+ infowindow21.open(map, marker21);
+ 	});	
+	
+var pos22 = new google.maps.LatLng(48.818584, 2.358036);
+var marker22=new google.maps.Marker({
+  position:pos22,
+  icon: {
+	path: google.maps.SymbolPath.CIRCLE,
+    scale: 5,
+	},
+  title: "Marker 22",
+  });
+  
+ var infowindow22 = new google.maps.InfoWindow({
+	content: "College Evariste Galois <br>" + "REP"
+	});
+
+marker22.setMap(map);
+
+marker22.addListener('click',function() {
+ infowindow22.open(map, marker22);
+ 	});	
+	
+var pos23 = new google.maps.LatLng(48.824576, 2.306461);
+var marker23=new google.maps.Marker({
+  position:pos23,
+  icon: {
+	path: google.maps.SymbolPath.CIRCLE,
+    scale: 5,
+	},
+  title: "Marker 23",
+  });
+  
+ var infowindow23 = new google.maps.InfoWindow({
+	content: "Lycee Francois Villon <br>" + "REP"
+	});
+
+marker23.setMap(map);
+
+marker23.addListener('click',function() {
+ infowindow23.open(map, marker23);
+ 	});	
+
+var pos24 = new google.maps.LatLng(48.890712, 2.304408);
+var marker24=new google.maps.Marker({
+  position:pos24,
+  icon: {
+	path: google.maps.SymbolPath.CIRCLE,
+    scale: 5,
+	},
+  title: "Marker 24",
+  });
+  
+marker24.setMap(map);
+
+marker24.addListener('click',function() {
+ infowindow24.open(map, marker24);
+ 	});
+	
+ var infowindow24 = new google.maps.InfoWindow({
+	content: "College Boris Vian <br>" + "REP"
+	});
+	
+var pos25 = new google.maps.LatLng(48.894679, 2.351637);
+var marker25=new google.maps.Marker({
+  position:pos25,
+  icon: {
+	path: google.maps.SymbolPath.CIRCLE,
+    scale: 5,
+	},
+  title: "Marker 25",
+  });
+  
+ var infowindow25 = new google.maps.InfoWindow({
+	content: "College Gerard Philipe <br>" + "REP"
+	});
+
+marker25.setMap(map);
+
+marker25.addListener('click',function() {
+ infowindow25.open(map, marker25);
+ 	});
+	
+var pos26 = new google.maps.LatLng(48.888602, 2.359467);
+var marker26=new google.maps.Marker({
+  position:pos26,
+  icon: {
+	path: google.maps.SymbolPath.CIRCLE,
+    scale: 5,
+	},
+  title: "Marker 26",
+  });
+  
+ var infowindow26 = new google.maps.InfoWindow({
+	content: "College Marx Dormoy <br>" + "REP"
+	});
+
+marker26.setMap(map);
+
+marker26.addListener('click',function() {
+ infowindow26.open(map, marker26);
+ 	});	
+
+var pos27 = new google.maps.LatLng(48.895760, 2.332719);
+var marker27=new google.maps.Marker({
+  position:pos27,
+  icon: {
+	path: google.maps.SymbolPath.CIRCLE,
+    scale: 5,
+	},
+  title: "Marker 27",
+  });
+  
+ var infowindow27 = new google.maps.InfoWindow({
+	content: "College Hector Berlioz <br>" + "REP"
+	});
+
+marker27.setMap(map);
+
+marker27.addListener('click',function() {
+ infowindow27.open(map, marker27);
+ 	});	
+	
+var pos28 = new google.maps.LatLng(48.893473, 2.350732);
+var marker28=new google.maps.Marker({
+  position:pos28,
+  icon: {
+	path: google.maps.SymbolPath.CIRCLE,
+    scale: 5,
+	},
+  title: "Marker 28",
+  });
+  
+ var infowindow28 = new google.maps.InfoWindow({
+	content: "College Marie Curie <br>" + "REP"
+	});
+
+marker28.setMap(map);
+
+marker28.addListener('click',function() {
+ infowindow28.open(map, marker28);
+ 	});
+	
+var pos29 = new google.maps.LatLng(48.889756, 2.379562);
+var marker29=new google.maps.Marker({
+  position:pos29,
+  icon: {
+	path: google.maps.SymbolPath.CIRCLE,
+    scale: 5,
+	},
+  title: "Marker 29",
+  });
+  
+ var infowindow29 = new google.maps.InfoWindow({
+	content: "College W.A. Mozart <br>" + "REP"
+	});
+
+marker29.setMap(map);
+
+marker29.addListener('click',function() {
+ infowindow29.open(map, marker29);
+ 	});
+	
+var pos30 = new google.maps.LatLng(48.886043, 2.378122);
+var marker30=new google.maps.Marker({
+  position:pos30,
+  icon: {
+	path: google.maps.SymbolPath.CIRCLE,
+    scale: 5,
+	},
+  title: "Marker 30",
+  });
+  
+ var infowindow30 = new google.maps.InfoWindow({
+	content: "College Sonia Delaunay <br>" + "REP"
+	});
+
+marker30.setMap(map);
+
+marker30.addListener('click',function() {
+ infowindow30.open(map, marker30);
+ 	});
+	
+var pos31 = new google.maps.LatLng(48.889137, 2.388659);
+var marker31=new google.maps.Marker({
+  position:pos31,
+  icon: {
+	path: google.maps.SymbolPath.CIRCLE,
+    scale: 5,
+	},
+  title: "Marker 31",
+  });
+  
+ var infowindow31 = new google.maps.InfoWindow({
+	content: "College Edgar Varese <br>" + "REP"
+	});
+
+marker31.setMap(map);
+
+marker31.addListener('click',function() {
+ infowindow31.open(map, marker31);
+	});
+ 	
+var pos32 = new google.maps.LatLng(48.869937, 2.389497);
+var marker32=new google.maps.Marker({
+  position:pos32,
+  icon: {
+	path: google.maps.SymbolPath.CIRCLE,
+    scale: 5,
+	},
+  title: "Marker 32",
+  });
+  
+ var infowindow32 = new google.maps.InfoWindow({
+	content: "College Jean Baptiste Clement <br>" + "REP"
+	});
+
+marker32.setMap(map);
+
+marker32.addListener('click',function() {
+ infowindow32.open(map, marker32);
+ 	});
+	
+var pos33 = new google.maps.LatLng(48.874016, 2.387110);
+var marker33=new google.maps.Marker({
+  position:pos33,
+  icon: {
+	path: google.maps.SymbolPath.CIRCLE,
+    scale: 5,
+	},
+  title: "Marker 33",
+  });
+  
+ var infowindow33 = new google.maps.InfoWindow({
+	content: "College Francoise Dolto <br>" + "REP"
+	});
+
+marker33.setMap(map);
+
+marker33.addListener('click',function() {
+ infowindow33.open(map, marker33);
+ 	});
+	
+var pos34 = new google.maps.LatLng(48.867137, 2.387800);
+var marker34=new google.maps.Marker({
+  position:pos34,
+  icon: {
+	path: google.maps.SymbolPath.CIRCLE,
+    scale: 5,
+	},
+  title: "Marker 34",
+  });
+  
+ var infowindow34 = new google.maps.InfoWindow({
+	content: "College Robert Doisneau <br>" + "REP"
+	});
+
+marker34.setMap(map);
+
+marker34.addListener('click',function() {
+ infowindow34.open(map, marker34);
+ 	});
+	
+var pos35 = new google.maps.LatLng(48.841027, 2.320550);
+var marker35 = new google.maps.Marker({
+	position: pos35,
+	title: "Marker 35",
+	});
+	
+var infowindow35 = new google.maps.InfoWindow({
+	content: "Hugo"
+	});
+	
+marker35.setMap(map);
+
+marker35.addListener('click',function() {
+ 	infowindow35.open(map, marker35);
+ 	});
+	
+var pos36 = new google.maps.LatLng(48.849977, 2.355182);
+var marker36 = new google.maps.Marker({
+	position: pos36,
+	title: "Marker 36",
+	});
+	
+var infowindow36 = new google.maps.InfoWindow({
+	content: "Midnight in Paris"
+	});
+	
+marker36.setMap(map);
+
+marker36.addListener('click',function() {
+ 	infowindow36.open(map, marker36);
+ 	});
+	
+var pos38 = new google.maps.LatLng(48.884017, 2.332188);
+var marker38 = new google.maps.Marker({
+	position: pos38,
+	title: "Marker 38",
+	});
+	
+var infowindow38 = new google.maps.InfoWindow({
+	content: "Moulin Rouge"
+	});
+	
+marker38.setMap(map);
+
+marker38.addListener('click',function() {
+ 	infowindow38.open(map, marker38);
+ 	});
+	
+var pos39 = new google.maps.LatLng(48.842698, 2.312488);
+var marker39 = new google.maps.Marker({
+	position: pos39,
+	title: "Marker 39",
+	});
+	
+var infowindow39 = new google.maps.InfoWindow({
+	content: "Two Days in Paris"
+	});
+	
+marker39.setMap(map);
+
+marker39.addListener('click',function() {
+ 	infowindow39.open(map, marker39);
+ 	});	
+} //close initial function
+
+google.maps.event.addDomListener(window, 'load', initialize);
+ 	
+</script>
+</head>
+
+<body>
+<div id="container">
+	<header>
+		<h1>Mapping Diversity in Paris</h1>
+		<h3>Paris is a diverse and vibrant city. Not only is it the political and cultural capital of France, but it is home to many immigrants and the descendents of immigrants. <br>
+		Paris is also a popular location for films, however these films seem not to represent the diversity that is present in the city. I have taken the locations of the scenes, in some cases the spot in which the whole scene occurs, in other cases a spot in which the scene occurs, or an approximation of where the scene might occur in a neighborhood, and placed this on to the accompanying map.<br>
+		Ultimately, the placing of these scenes upon the map of Paris hopes to discover both how diversity is being represented and where it is being shown, and if areas that are considered more diverse are being avoided or whitewashed.
+		</h3>
+	</header>
+		<div id="googleMap"></div>
+	<p>The standard red markers represent the locations from films. At times my locating has relied on a lived experience of Paris. Not all locations are made explicit in the scenes. However, ultimately I am not only looking for diversity as portrayed in the movies themselves, but also looking to see how these scenes are located within Paris.<br>
+	The colored circles on the map represent neighborhoods that are considered ethnically diverse. Of course these lines should not be seen as discrete limits for these areas, but representation of their centers and radius. There are also many people of diverse backgrounds living throughout Paris, but in most neighborhoods they are by far the minority.<br>
+	The black circles are Reseau d'Education Prioritaire, or areas of educational priority. These normally represent schools that have lower graduation rates or other indicators of potential academic struggles in the student population. These schools are also known as "bad schools," which normally have a higher proportion of minority and immigrant populations.<br>
+	Paris consists of 20 arrondisments, which are larger than neighborhoods, quartier in French. These districts are government entities, more similar to wards in New Orleans or the boroughs in New York City. These arrondisments are set up in a clockwise circle order originating with the islands in the Seine and moving outwards. This also represents the origins of the city close to the river and its expansion outwards.<br>
+	Paris does not have an "inner city" like American cities. Rather the "dangerous" areas are considered to be the suburbs directly bordering the city. These areas also have greater proportions of minorities and immigrants.<br>
+	I have done my best to approximate areas with more diverse residents both through my experience and information available from tourist guides and other writing about the city, but it is difficult to map diversity in Paris because it is illegal to collect data based on race or ethnicity in France. While numbers of immigrants and their national origin may be tracked, once a person becomes a citizen, their ethnic background is not recorded.</p>
+</div><!-- close #container -->
+</body>
+
+</html> 
