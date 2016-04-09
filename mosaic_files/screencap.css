@@ -1,0 +1,55 @@
+
+        body {background:#008080 ; overflow-x:hidden; font-family: Century Gothic, Verdana, Tahoma, sans-serif; color: white;}
+
+        #container {width:960px; margin:0 auto;}
+
+		a:link, a:visited {
+			color:#B60;
+			text-decoration:none;
+			}
+			
+		#abstract {
+			margin: 5em 0 3em 0;
+			font-size:1.25em;
+			}
+			
+		.intro {
+			margin:5em 0 2em 0;
+			}
+    
+		hr {
+			margin:5em 0;
+			border: 1.5px solid #ffffff;
+			
+			}
+			
+		.clear {clear:both}
+		.grid {
+			margin: 2.5em 0;
+			}
+			
+		.grid-item {
+			background:#000000;
+			float:left;
+			width:23%;
+			height:auto;
+			border: 1px solid hsla(0, 0%, 0%, 0.5);
+			margin:.5em .25em;
+			}
+	
+
+        header {text-align:center; margin-bottom:3em; border-bottom:2px solid #ffffff}
+        
+        header h1 {
+        	font-size:3.5em;
+        	}
+
+        h1, h2 {text-align:center}
+
+        #references {clear:both; font-size:.9em;}
+
+        footer {clear:both; font-size:2em; padding-top:50px; padding-bottom:50px; border-top:2px solid #ffffff; text-align:center; color:000000; margin-top:3em;}
+
+}
+
+        
